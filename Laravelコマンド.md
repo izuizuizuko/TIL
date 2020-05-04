@@ -1,2 +1,2 @@
-###基本<br>
+### 基本<br>
 ```composer create-project --prefer-dist laravel/laravel```
