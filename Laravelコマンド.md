@@ -10,6 +10,6 @@ Debugbarをインストール<br>
 ```composer require barryvdh/laravel-debugbar```
 <br>
 ```.env<br>
-DEBUGBAR_ENABLED=null  # デフォルト。<br>APP_DEBUGに応じて決まる<br>
-DEBUGBAR_ENABLED=true  # 必ず有効<br>
-DEBUGBAR_ENABLED=false # 必ず無効<br>```
+DEBUGBAR_ENABLED=null  # デフォルト。APP_DEBUGに応じて決まる
+DEBUGBAR_ENABLED=true  # 必ず有効
+DEBUGBAR_ENABLED=false # 必ず無効```
