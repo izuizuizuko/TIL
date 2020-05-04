@@ -12,4 +12,5 @@ Debugbarをインストール<br>
 ```.env<br>
 DEBUGBAR_ENABLED=null  # デフォルト。APP_DEBUGに応じて決まる
 DEBUGBAR_ENABLED=true  # 必ず有効
-DEBUGBAR_ENABLED=false # 必ず無効```
+DEBUGBAR_ENABLED=false # 必ず無効
+```
