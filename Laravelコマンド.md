@@ -1,4 +1,4 @@
-## 作成時<br>
+## :point_up:作成時<br>
 ### コマンド接続<br>
 ```php artisan serve```
 <br>
@@ -16,17 +16,16 @@ DEBUGBAR_ENABLED=true  # 必ず有効
 DEBUGBAR_ENABLED=false # 必ず無効
 ```
 <br>
-
 #### 本番環境では表示させないようにする
 ```
 php artisan config:clear
 php artisan cache:clear
 ```
-<br><br>
+<br>
 .env<br>
 ```DEBUGBAR_ENABLED=false  # 必ず無効```
 <br>
-## DB関係<br>
+## :point_up:DB関係<br>
 
 ### マイグレーションファイル作成<br>
 ```php artisan make:migration create_(テーブル名)_table```
@@ -38,7 +37,7 @@ php artisan cache:clear
 ## Tinker<br>
 ```php aritisan tinker```
 <br>
-## エラー文の日本語化<br>
+## :point_up:エラー文の日本語化<br>
 ### 1. ```/resources/lang/```に```ja```を作成する<br>
 ### 2. ```/resources/lang/ja```に移動する。(ターミナル）<br>
 ### 3. 4つのファイルを実行する<br>
@@ -50,7 +49,7 @@ $ curl -OL https://raw.githubusercontent.com/rito-nishino/Laravel-Japanese-Langu
 ```
 
 ### 注)必ずconfig/app.phpを```locale' => 'ja```に変更する<br>
-## ルートの確認<br>
+## :point_up:ルートの確認<br>
 ### ターミナルにて一覧
 ```php artisan route:list```
 <br>
