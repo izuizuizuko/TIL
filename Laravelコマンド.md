@@ -5,7 +5,7 @@
 ### Laravelアプリ作成<br>
 ```composer create-project --prefer-dist laravel/laravel タイトル```
 <br>
-## デバック表示<br>
+## :point_up:デバック表示<br>
 Debugbarをインストール<br>
 ```composer require barryvdh/laravel-debugbar```
 <br><br>
@@ -17,6 +17,7 @@ DEBUGBAR_ENABLED=false # 必ず無効
 ```
 <br>
 #### 本番環境では表示させないようにする
+<br>
 ```
 php artisan config:clear
 php artisan cache:clear
@@ -25,7 +26,7 @@ php artisan cache:clear
 .env<br>
 ```DEBUGBAR_ENABLED=false  # 必ず無効```
 <br>
-## :point_up:DB関係<br>
+## DB関係<br>
 
 ### マイグレーションファイル作成<br>
 ```php artisan make:migration create_(テーブル名)_table```
