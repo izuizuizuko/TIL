@@ -37,3 +37,8 @@
      content: '';
   ```
   <br>
+  
+  #### :full_moon_with_face:flexとposition<br>
+  flexを使用すると重なりあいはできない。<br>
+  ```flex-direction: column```縦方向の均等<br>
+  ```flex-grow:;```grow=親要素を満たすまで均等に表示（動的に横幅をきめれる）
