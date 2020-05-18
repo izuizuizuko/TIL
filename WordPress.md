@@ -1,3 +1,5 @@
+## :point_up:管理画面へのログイン<br>
+```URL/wp-login.php```
 ## :point_up:自作テーマ作成
 <br>
 MAMP→htdocs→WordPressフォルダー→wp-content→themes→フォルダー作成<br>
