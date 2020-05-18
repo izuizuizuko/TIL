@@ -15,3 +15,16 @@
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     </IfModule>
+  ```
+<br>
+#### :globe_with_meridians:パーマリンク設定<br>
+パーマリンク →URLの部分<br>
+題名がなることが多いが日本語は対応してないので文字化けになる。→タイトルを英語翻訳にして打ち換えが理想<br><br>
+　設定方法<br>
+  1.ダッシュボード→設定→パーマリンク設定<br>
+```
+ 基本） パーマリンの設定をカスタム構造にする。
+ /%year%/%monthnum%/%day%/%post_name%/ これだとnameが文字ばけするので、idに変更が無難 
+ /%year%/%monthnum%/%day%/%post_id%/
+ ※固定ページには通用しない 固定ページを作成した場合は、パーマリンクを作成して設定。
+ ```
