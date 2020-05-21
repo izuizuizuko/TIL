@@ -81,7 +81,7 @@ for(let v of arry) {
 <br>
 ・textContent →テキスト情報のみの取得（色等は呼び出せず変更もできない）<br>
 
-### イベントリスナー<br>
+### :earth_asia:イベントリスナー<br>
 addEventListener = イベント登録。複数登録できる。
 ```
 const btn = docment.querySelector("btn");
