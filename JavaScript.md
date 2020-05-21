@@ -68,6 +68,31 @@ for(let v of arry) {
 ### :earth_asia:DOM<br>
 ・情報の取得<br>
 <br>
-  ```document.querySelector("ほしい情報の名称")```
+  ```document.querySelector("ほしい情報の名称")```<br><br>
+#### ・idの場合→"#ID名"<br>
+  (```document.getElementsBiId("ほしい情報の名称")```※昔の取得方法)<br>
+ <br>
+#### ・クラスの場合→"．クラス名"<br><br>
+#### ・リストとか複数のデーターがあり全てを取得したいとき<br>
+```document.querySelectorAll("ほしい情報の名称")```
   <br>
-dd
+### innerHTMLとtextContent<br>
+・innnerHTML →HTML要素を取得・変更するとき（色とか）
+<br>
+・textContent →テキスト情報のみの取得（色等は呼び出せず変更もできない）<br>
+
+### イベントリスナー<br>
+addEventListener = イベント登録。複数登録できる。
+```
+const btn = docment.querySelector("btn");
+function hello() {
+alert("hello");
+};
+btn.addEventListener("click, hello);
+```
+①イベントを登録したい要素の取得```const btn = docment.querySelector("btn");```<br>
+②```addEventListener```でイベントの登録<br>
+  第一引数にイベント、第二引数に実行したい処理```("click, hello);```<br>
+<br>
+  
+  
