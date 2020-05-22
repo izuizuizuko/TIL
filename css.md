@@ -41,4 +41,41 @@
   #### :full_moon_with_face:flexとposition<br>
   flexを使用すると重なりあいはできない。<br>
   ```flex-direction: column```縦方向の均等<br>
-  ```flex-grow:;```grow=親要素を満たすまで均等に表示（動的に横幅をきめれる）
+  ```flex-grow:;```grow=親要素を満たすまで均等に表示（動的に横幅をきめれる）<br>
+  
+  #### :full_moon_with_face:レスポンシブ対応<br>
+  ①モバイルとデスクトップの２つのcssを作成する。<br>
+  ②htmlには```style.css```を読み込む<br>
+   ```<link rel="stylesheet" href="style.css">```
+   <br>
+   ③style.cssに以下を書き込んで読み込む<br> 
+ ```
+  @import "mobile.scss";
+
+  @media screen and (min-width: 601px) {
+    @import 'desktop.scss';
+  }
+```
+<br>
+デスクトップの方が複雑なので、簡単なモバイルをベースにデスクトップの部分だけ追記する形をとる<br>
+
+ #### :full_moon_with_face:googleフォント使用時の注意<br>
+ cssに記載する際の順は、```ローマ字フォント→日本語フォント→保険のフォント```<br>
+ <br>フォントは毎回設定するよりある程度揃えた方がサイトに統一感がでる<br>
+ ```
+          モバイル　　PC
+ font-sm　14px     16px
+ font-md　17px     19px
+ font-lr  17px     23px
+ font-lg  25px     36px
+ ```
+ <br><br>
+ #### :full_moon_with_face:リセットCSSとノーマライズCSS<br>
+ ・リセットCSS→すべてを打ち消す。<br>
+ ```https://meyerweb.com/eric/tools/css/reset/```<br>
+ ・ノーマライズCSS→ブラウザ毎に違う部分を統一する<br>
+ ```https://necolas.github.io/normalize.css/8.0.1/normalize.css```<br>
+ ・BootStrapのrebootCSS<br>
+ ```https://github.com/twbs/bootstrap/blob/v4.3.1/dist/css/bootstrap-reboot.css```<br>
+ #### ※すべて一番先頭で読み取る必要がある。
+ 
