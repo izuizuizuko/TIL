@@ -25,4 +25,10 @@
 ```
 <p v-if="error">エラー</p>
 ```
-  
+ <br>
+
+### 属性の書き換え<br> 
+```
+<p v-bind:class="error_class">エラー</p>
+```
+ <br>
