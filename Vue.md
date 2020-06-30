@@ -1,7 +1,20 @@
 ### Vue.jsの基本<br>
-※　<id>タグで囲む<br>
+①　<id>タグで囲む<br>
 ```
   <div id="app">
     {{ message }}
   </div>
  ```
+ ② <body>の最後に追加。<br>
+  ```<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>```
+ ③定型文を記載<br>
+  ```
+  <script>
+    var app = new Vue({
+    el: "#app",
+    data: {
+      message: "タイトル"
+    }
+    });
+  </script>
+  ```
