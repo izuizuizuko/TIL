@@ -31,6 +31,13 @@ php artisan cache:clear
 php artisan make:controller EntriesController   
 ```
 ※　コントローラ名は複数形！<br>
+
+### モデルの作成<br>
+```
+例）entryの場合
+php artisan make:Model Entry
+```
+<br>
 ## :point_up:DB関係<br>
 
 ### マイグレーションファイル作成<br>
