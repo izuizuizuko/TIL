@@ -55,5 +55,6 @@ $ curl -OL https://raw.githubusercontent.com/rito-nishino/Laravel-Japanese-Langu
 ```php artisan route:list > route.txt```
 <br>
 
-## :point_up:コントローラーに必ず記載（ビューの表示）<br>
-```use Illuminate\Support\Facades\View;```
+## :point_up:コントローラーに必ず記載<br>
+```use Illuminate\Support\Facades\View;```（ビューの表示）<br>
+```use App\モデル名;```（モデルの使用）<br>
