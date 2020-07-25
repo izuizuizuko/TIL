@@ -44,7 +44,18 @@ DB::table("entries")->insert([
             "update_at"=>date("Y-m-d H:i:s")
         ]);
  ```
-
+ ### seedデータの読み込み<br>
+ ・seeds=>Databaseseedr.phpに記載<br>
+ 
+ ```
+  public function run()
+    {
+        // $this->call(UserSeeder::class);
+        $this->call(EntriesTableSeeder::class);
+    }
+ ```
+ <br>
+ 
 ## Tinker<br>
 ```php aritisan tinker```
 <br>
