@@ -31,6 +31,9 @@ php artisan cache:clear
 php artisan make:controller EntriesController   
 ```
 ※　コントローラ名は複数形！<br>
+コントローラーに必ず記載<br>
+```use Illuminate\Support\Facades\View;```（ビューの表示）<br>
+```use App\モデル名;```（モデルの使用）<br>
 
 ### モデルの作成<br>
 ```
@@ -93,7 +96,3 @@ $ curl -OL https://raw.githubusercontent.com/rito-nishino/Laravel-Japanese-Langu
 ### テキストでエディタにて一覧
 ```php artisan route:list > route.txt```
 <br>
-
-## :point_up:コントローラーに必ず記載<br>
-```use Illuminate\Support\Facades\View;```（ビューの表示）<br>
-```use App\モデル名;```（モデルの使用）<br>
