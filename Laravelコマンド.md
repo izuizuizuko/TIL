@@ -33,7 +33,18 @@ php artisan cache:clear
 ### ロールバックの実行<br>
 ```php artisan migrate:rollback```<br>
 ### seedデータの登録<br>
-```php artisan make:seeder <テーブル名>TableSeeder```
+```php artisan make:seeder <テーブル名>TableSeeder```<br>
+テーブル作成後seederに記載<br>
+```
+（例）entryテーブルの場合
+DB::table("entries")->insert([
+            "title"=>"entry1",
+            "content"=>"hello",
+            "created_at"=>date("Y-m-d H:i:s"),
+            "update_at"=>date("Y-m-d H:i:s")
+        ]);
+ ```
+
 ## Tinker<br>
 ```php aritisan tinker```
 <br>
