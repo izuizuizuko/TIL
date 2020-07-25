@@ -41,6 +41,7 @@ php artisan make:controller EntriesController
 php artisan make:Model Entry
 ```
 <br>
+
 ## :point_up:DB関係<br>
 
 ### マイグレーションファイル作成<br>
