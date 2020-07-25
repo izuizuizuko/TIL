@@ -54,3 +54,6 @@ $ curl -OL https://raw.githubusercontent.com/rito-nishino/Laravel-Japanese-Langu
 ### テキストでエディタにて一覧
 ```php artisan route:list > route.txt```
 <br>
+
+## :point_up:コントローラーに必ず記載（ビューの表示）<br>
+```use Illuminate\Support\Facades\View;```
