@@ -32,6 +32,8 @@ php artisan cache:clear
 ```php artisan migrate```<br>
 ### ロールバックの実行<br>
 ```php artisan migrate:rollback```<br>
+### seedデータの登録<br>
+```php artisan make:seeder <テーブル名>TableSeeder```
 ## Tinker<br>
 ```php aritisan tinker```
 <br>
