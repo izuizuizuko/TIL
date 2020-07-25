@@ -41,6 +41,26 @@ php artisan make:controller EntriesController
 php artisan make:Model Entry
 ```
 <br>
+### ビューのテンプレート化<br>
+①共通部分のファイルを作成<br>
+例
+```
+            <!DOCTYPE html>
+            <html lang="ja">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>@yield("title")</title>
+            </head>
+            <body>
+                <h1>app</h1>
+                @yield("content")
+            </body>
+            </html>
+```
+<br>
+
+②
 
 ## :point_up:DB関係<br>
 
