@@ -23,6 +23,14 @@ php artisan cache:clear
 .env<br>
 ```DEBUGBAR_ENABLED=false  # 必ず無効```
 <br>
+
+## :point_up:MVC<br>
+### コントローラ作成<br>
+```
+例）entryの場合
+php artisan make:controller EntriesController   
+```
+※　コントローラ名は複数形！<br>
 ## :point_up:DB関係<br>
 
 ### マイグレーションファイル作成<br>
