@@ -40,9 +40,10 @@ php artisan make:controller EntriesController
 例）entryの場合
 php artisan make:Model Entry
 ```
-<br>
+
 ### ビューのテンプレート化<br>
-①共通部分のファイルを作成<br>
+①共通部分のファイルを作成(viewにlayoutsフォルダーを作成しその中にappファイルを作成）<br>
+各所で読み込みたい場所に【@yield】を記入。
 ```
 例
             <!DOCTYPE html>
@@ -59,10 +60,41 @@ php artisan make:Model Entry
 ```
 <br>
 
-②
+②それぞれのビューで共通テンプレートを読み込む<br>
+```
+例）index.bldae.phpの場合<br>
+
+@extends("layouts.app")
+
+@section("title", "blog")
+@section("content", "hello")
+```
+<br>
+<br>
+・@extendsで共通ファイルの読み込み
+<br>
+<br>・@sextionで@yieldの部分の置き換え<br>
+
+```
+例）view.bldae.php(詳細画面）の場合<br>
+
+
+@extends("layouts.app")
+
+@section("title", $entry->title)
+@section("content")
+<p>{{ $entry->title }}</p>
+<article>
+{[ $entry->content }}
+</article>
+@endsection
+```
+<br>
+@sectionにそのレイアウトのHTMLを記載する場合（例：リストとか）は、@endsectionをつけること。
+ <br>
+<br>
 
 ## :point_up:DB関係<br>
-
 ### マイグレーションファイル作成<br>
 ```php artisan make:migration create_(テーブル名)_table```
 <br>
